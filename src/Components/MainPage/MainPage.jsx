@@ -3,7 +3,16 @@ import logo from "./../../img/logoFinance.png";
 import InputList from "../InputList/InputList";
 import FinanceList from "../FinanceList/FinanceList";
 
-const MainPage = ({ onClick }) => {
+const MainPage = ({
+  onClick,
+  data,
+  setData,
+  deleteItem,
+  filterEntrada,
+  filterSaida,
+  state,
+  setState,
+}) => {
   return (
     <div className="container-principal-main">
       <header className="header-main">
@@ -18,10 +27,18 @@ const MainPage = ({ onClick }) => {
       </header>
       <main className="main-principal">
         <div className="container-input-main">
-          <InputList />
+          <InputList data={data} setData={setData} />
         </div>
         <div className="container-list-financas">
-          <FinanceList />
+          <FinanceList
+            data={data}
+            setData={setData}
+            deleteItem={deleteItem}
+            filterEntrada={filterEntrada}
+            filterSaida={filterSaida}
+            state={state}
+            setState={setState}
+          />
         </div>
       </main>
     </div>

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 .img-logo-main {
   width: 120px;
@@ -33,19 +32,16 @@
 }
 
 .container-input-main {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .box-input-description {
-  margin-top: 10px;
-
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   margin-left: 5px;
 }
 .span-description {
-  margin-top: 5px;
   font-size: 15px;
   color: #dadbbd;
 }
@@ -53,7 +49,6 @@
 /* container main principal */
 
 .input-description {
-  margin-top: 10px;
   width: 255px;
   height: 35px;
   border: none;
@@ -63,7 +58,6 @@
 
 .container-input-valor {
   margin-top: 5px;
-
   display: flex;
 }
 
@@ -95,7 +89,14 @@
   border-radius: 5px;
 }
 .container-input-main {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+  background-color: rgba(4, 25, 71, 0.61);
   margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container-input-valor {
   margin-top: 30px;
@@ -164,6 +165,7 @@
 .box-financas {
   display: flex;
   justify-content: flex-start;
+  overflow-y: scroll;
 }
 .ul-list {
   height: 330px;
@@ -175,7 +177,9 @@
   margin-top: 5px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.753);
   height: 75px;
+
   list-style: none;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,7 +203,13 @@
 .box-btn-delete > button {
   margin-right: 5px;
 }
+.color-green {
+  border-left: 2px solid #6ebf8b;
+}
 
+.color-red {
+  border-left: 2px solid #d82148;
+}
 .btn-remove-all > button {
   width: 255px;
   height: 30px;
@@ -218,6 +228,29 @@
   font-size: 15px;
   color: #fff;
 }
+.totalValue {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.box-btn-delete {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+}
+.box-btn-price {
+  margin-top: 10px;
+}
+.box-btn-delete > button {
+  border: none;
+  background-color: transparent;
+  color: #d82148;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 @media (min-width: 1280px) {
   .main-principal {
@@ -233,6 +266,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.301);
+    border-radius: 5px;
+    background-color: rgba(4, 25, 71, 0.61);
   }
   .container-list-financas {
     width: 580px;
@@ -249,8 +285,9 @@
   .item-financas {
     margin-top: 15px;
     margin-left: 30px;
-    width: 550px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.753);
+    width: 500px;
+
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.301);
     height: 75px;
     list-style: none;
     border-radius: 5px;
@@ -286,5 +323,26 @@
   .box-btn > button:hover {
     background: #d82148;
     color: #fff;
+  }
+  .totalValue {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 45px;
+    margin-left: 27px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.301);
+  }
+  .total-title {
+    margin-left: 5px;
+    font-size: small;
+  }
+  .total-price {
+    margin-right: 5px;
+    font-size: medium;
+  }
+  .box-btn-price {
+    font-size: 15px;
   }
 }
