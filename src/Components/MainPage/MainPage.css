@@ -1,0 +1,290 @@
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.img-logo-main {
+  width: 120px;
+}
+
+.btn-logout-main {
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 8px 18px;
+  border-radius: 100px;
+  background: #d82148;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+.btn-logout-main:hover {
+  background: #d82148;
+}
+
+.btn-logout-main:active {
+  transform: scale(0.95);
+}
+
+.container-input-main {
+  margin-bottom: 15px;
+}
+
+.box-input-description {
+  margin-top: 10px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.span-description {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #dadbbd;
+}
+
+/* container main principal */
+
+.input-description {
+  margin-top: 10px;
+  width: 255px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.container-input-valor {
+  margin-top: 5px;
+
+  display: flex;
+}
+
+.box-valor,
+.box-type-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5px;
+  color: #dadbbd;
+  font-size: 15px;
+}
+
+.input-number {
+  margin-top: 10px;
+  width: 130px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-select {
+  margin-top: 10px;
+  width: 130px;
+  height: 37px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.container-input-main {
+  margin-top: 30px;
+}
+.container-input-valor {
+  margin-top: 30px;
+}
+
+.container-btn-cadastrar {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.btn-cadastrar {
+  width: 255px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 8px 18px;
+  border-radius: 100px;
+  background: #d82148;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.btn-cadastrar:hover {
+  background: #d82148;
+}
+
+.btn-cadastrar:active {
+  transform: scale(0.95);
+}
+
+/* lista de gastos */
+
+.box-btn-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 35px;
+}
+
+.box-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.box-btn > button {
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  font-weight: 600;
+  border-radius: 100px;
+}
+.box-btn > button:hover {
+  background: #d82148;
+  color: #fff;
+}
+
+.box-financas {
+  display: flex;
+  justify-content: flex-start;
+}
+.ul-list {
+  height: 330px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+.item-financas {
+  margin-top: 5px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.753);
+  height: 75px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-text {
+  display: flex;
+  margin-left: 5px;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.box-text > p {
+  font-size: medium;
+}
+
+.box-text > span {
+  font-size: medium;
+}
+.box-btn-delete > button {
+  margin-right: 5px;
+}
+
+.btn-remove-all > button {
+  width: 255px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 8px 18px;
+  border-radius: 100px;
+  background: #d82148;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  color: #fff;
+}
+
+@media (min-width: 1280px) {
+  .main-principal {
+    width: 1280px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .container-input-main {
+    margin-top: 15px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-list-financas {
+    width: 580px;
+  }
+  .box-input-description {
+    margin-top: 30px;
+  }
+  .container-input-valor {
+    margin-top: 35px;
+  }
+  .container-btn-cadastrar {
+    margin-top: 50px;
+  }
+  .item-financas {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 550px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.753);
+    height: 75px;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box-btn-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35px;
+  }
+
+  .box-btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  .box-btn > button {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: Helvetica, "sans-serif";
+    transition: all 0.2s;
+    font-weight: 600;
+    border-radius: 100px;
+  }
+  .box-btn > button:hover {
+    background: #d82148;
+    color: #fff;
+  }
+}

@@ -7,7 +7,7 @@ const LandingPage = ({ onClick }) => {
       <div className="container-one-landing">
         <div>
           <div>
-            <img src={logo} alt="" />
+            <img src={logo} alt="logoLanding" />
           </div>
           <div>
             <h2>Centralize o controle de suas finanças</h2>
