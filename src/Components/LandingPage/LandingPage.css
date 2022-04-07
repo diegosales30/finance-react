@@ -1,0 +1,51 @@
+.img-finance {
+  width: 350px;
+}
+.container-btn-landing {
+  margin-top: 50px;
+}
+.btn-iniciar {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 8px 18px;
+  border-radius: 100px;
+  background: #d82148;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  font-size: 15px;
+  color: #fff;
+}
+
+.btn-iniciar:hover {
+  background: #d82148;
+}
+
+.btn-iniciar > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-iniciar:hover svg {
+  transform: translateX(5px);
+}
+
+.btn-iniciar:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 1280px) {
+  .container-principal-landing {
+    display: flex;
+  }
+  .img-finance {
+    width: 600px;
+  }
+  .container-one-landing {
+    width: 450px;
+  }
+}
