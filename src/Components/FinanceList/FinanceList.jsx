@@ -9,6 +9,7 @@ const FinanceList = ({
   filterEntrada,
   state,
   setState,
+  removeAll,
 }) => {
   console.log(data);
   return (
@@ -35,7 +36,7 @@ const FinanceList = ({
       </div>
       <TotalPrice data={data} />
       <div className="btn-remove-all">
-        <button>Remover Tudo</button>
+        <button onClick={() => setData([])}>Remover Tudo</button>
       </div>
     </>
   );

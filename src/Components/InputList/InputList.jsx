@@ -18,6 +18,7 @@ const InputList = ({ data, setData }) => {
         <div className="box-input-description">
           <span className="span-description">Descrição</span>
           <input
+            required
             className="input-description"
             placeholder="Ex: Salário de mês"
             type="text"
@@ -28,6 +29,7 @@ const InputList = ({ data, setData }) => {
           <div className="box-valor">
             <span>Valor</span>
             <input
+              required
               className="input-number"
               placeholder="1 R$"
               type="number"
